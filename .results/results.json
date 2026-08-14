@@ -1,0 +1,94 @@
+{
+  "test_case_results": [
+    {
+      "test_case_id": "RJSCPBX8IY_TEST_1",
+      "evaluation_result": "CORRECT",
+      "title": "Page should consist of an HTML image element with alt as \"website logo\" and src value as given website logo URL",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "RJSCPBX8IY_TEST_2",
+      "evaluation_result": "CORRECT",
+      "title": "Page should consist of an HTML main heading element with text content as \"CoWIN Vaccination in India\"",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "RJSCPBX8IY_TEST_3",
+      "evaluation_result": "CORRECT",
+      "title": "When the page is opened, an HTTP GET request should be made to vaccinationDataApiUrl",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "RJSCPBX8IY_TEST_4",
+      "evaluation_result": "CORRECT",
+      "title": "When the page is opened, an HTML container element with the data-testid attribute value as \"loader\" should be displayed while the HTTP GET request is in progress",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "RJSCPBX8IY_TEST_5",
+      "evaluation_result": "CORRECT",
+      "title": "Page should consist of an HTML main heading element with text content as \"Vaccination Coverage\"",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "RJSCPBX8IY_TEST_6",
+      "evaluation_result": "CORRECT",
+      "title": "When the HTTP GET request made to vaccinationDataApiUrl is successful, then the Bar chart for Vaccination Coverage should be displayed",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "RJSCPBX8IY_TEST_7",
+      "evaluation_result": "CORRECT",
+      "title": "When the HTTP GET request made to vaccinationDataApiUrl is successful, then the Bar chart for Vaccination Coverage should be displayed along with \"XAxis\" component",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "RJSCPBX8IY_TEST_8",
+      "evaluation_result": "CORRECT",
+      "title": "When the HTTP GET request made to vaccinationDataApiUrl is successful, then the Bar chart for Vaccination Coverage should be displayed along with \"YAxis\" component",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "RJSCPBX8IY_TEST_9",
+      "evaluation_result": "CORRECT",
+      "title": "When the HTTP GET request made to vaccinationDataApiUrl is successful, then the Bar chart should display the \"Bars\" for the response",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "RJSCPBX8IY_TEST_10",
+      "evaluation_result": "CORRECT",
+      "title": "Page should consist of an HTML main heading element with text content as \"Vaccination by gender\"",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "RJSCPBX8IY_TEST_11",
+      "evaluation_result": "CORRECT",
+      "title": "Page should consist of an HTML main heading element with text content as \"Vaccination by Age\"",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "RJSCPBX8IY_TEST_12",
+      "evaluation_result": "CORRECT",
+      "title": "When the HTTP GET request made to vaccinationDataApiUrl is successful, then the Pie charts for Vaccination by gender and Vaccination by age should be displayed respectively",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "RJSCPBX8IY_TEST_13",
+      "evaluation_result": "CORRECT",
+      "title": "When the HTTP GET request made to vaccinationDataApiUrl is successful, then the charts for the Vaccination Coverage, Vaccination by gender, and Vaccination by age should display the chart legends using \"Legend\" components provided by recharts",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "RJSCPBX8IY_TEST_14",
+      "evaluation_result": "CORRECT",
+      "title": "When the HTTP GET request is unsuccessful, then the page should consist of an HTML image element with alt attribute value as \"failure view\" and src as the given Failure view image URL",
+      "errorMessages": []
+    },
+    {
+      "test_case_id": "RJSCPBX8IY_TEST_15",
+      "evaluation_result": "CORRECT",
+      "title": "When the HTTP GET request is unsuccessful, then the page should consist of an HTML main heading element with text content as \"Something went wrong\"",
+      "errorMessages": []
+    }
+  ]
+}
