@@ -1,0 +1,263 @@
+.posts-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: azure;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0, 188, 212, 0.3);
+  transition: box-shadow 0.3s ease;
+  min-width: 1040px;
+  min-height: 866px;
+  top: 258px;
+  left: 200px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.posts-card-container:hover {
+  box-shadow: 0 6px 20px rgba(0, 188, 212, 0.45);
+  transform: translateY(-3px);
+}
+
+.post-header-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 50px;
+  width: 1040px;
+  gap: 20px;
+}
+
+.profile-image {
+  height: 60px;
+  width: 60px;
+  border-radius: 50px;
+}
+
+.profile-heading {
+  font-family: 'Roboto';
+}
+
+.posts-image {
+  height: 650px;
+  width: 1040px;
+  top: 59px;
+}
+
+.profile-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 50px;
+  width: 1040px;
+  gap: 20px;
+}
+
+.post-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0px 50px;
+  width: 1040px;
+}
+
+.post-like {
+  font-family: 'roboto';
+  font-weight: 800;
+}
+
+.post-caption {
+  font-family: 'roboto';
+  font-weight: 500;
+}
+
+.post-hours {
+  font-family: 'roboto';
+  font-weight: 200;
+  color: #989898;
+}
+
+.comment-userName {
+  font-family: 'roboto';
+  font-weight: bold;
+  color: #000000;
+}
+
+.comment-style {
+  font-family: 'roboto';
+}
+@media screen and (max-width: 1200px) {
+  .posts-card-container {
+    width: 90%;
+    min-width: 0;
+    min-height: auto;
+  }
+
+  .post-header-container,
+  .profile-icons-container,
+  .post-info-container {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .posts-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+/* =========================
+   MEDIUM DEVICES
+   601px - 768px
+   ========================= */
+
+@media screen and (max-width: 768px) {
+  .posts-card-container {
+    width: 90%;
+    min-width: 0;
+    min-height: auto;
+    margin: 15px auto;
+  }
+
+  .post-header-container {
+    width: 100%;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    gap: 15px;
+  }
+
+  .profile-image {
+    width: 50px;
+    height: 50px;
+  }
+
+  .profile-heading {
+    font-size: 18px;
+  }
+
+  .posts-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .profile-icons-container {
+    width: 100%;
+    padding: 10px 25px;
+    box-sizing: border-box;
+    gap: 18px;
+  }
+
+  .post-info-container {
+    width: 100%;
+    padding: 0 25px;
+    box-sizing: border-box;
+  }
+}
+
+/* =========================
+   SMALL DEVICES
+   401px - 600px
+   ========================= */
+
+@media screen and (max-width: 600px) {
+  .posts-card-container {
+    width: 94%;
+    min-width: 0;
+    min-height: auto;
+    margin: 12px auto;
+  }
+
+  .post-header-container {
+    padding: 12px 15px;
+    gap: 12px;
+  }
+
+  .profile-image {
+    width: 45px;
+    height: 45px;
+  }
+
+  .profile-heading {
+    font-size: 16px;
+  }
+
+  .posts-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .profile-icons-container {
+    padding: 10px 15px;
+    gap: 15px;
+  }
+
+  .post-info-container {
+    padding: 0 15px;
+  }
+
+  .post-like,
+  .post-caption,
+  .post-hours,
+  .comment-style {
+    font-size: 14px;
+  }
+}
+
+/* =========================
+   VERY SMALL DEVICES
+   400px and below
+   ========================= */
+
+@media screen and (max-width: 400px) {
+  .posts-card-container {
+    width: 96%;
+    min-width: 0;
+    min-height: auto;
+    margin: 10px auto;
+    border-radius: 8px;
+  }
+
+  .post-header-container {
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  .profile-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .profile-heading {
+    font-size: 15px;
+  }
+
+  .posts-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .profile-icons-container {
+    padding: 8px 12px;
+    gap: 12px;
+  }
+
+  .post-info-container {
+    padding: 0 12px;
+  }
+
+  .post-like,
+  .post-caption,
+  .post-hours,
+  .comment-style {
+    font-size: 13px;
+  }
+
+  .comment-userName {
+    font-size: 13px;
+  }
+}

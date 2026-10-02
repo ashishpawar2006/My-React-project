@@ -1,0 +1,437 @@
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  animation: pageEnter 0.6s ease-out;
+  background: linear-gradient(135deg, #f0fdff 0%, #e6f9fb 50%, #d9f3f5 100%);
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+  min-height: 60vh;
+  width: 80%;
+  background: linear-gradient(135deg, #e0f7fa, #b2ebf2, #80deea);
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+.login-image {
+  height: 320px;
+  width: 450px;
+}
+
+.login-credentials-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.login-logo {
+  height: 70px;
+  width: 150px;
+}
+
+.insta-share-heading {
+  font-size: 25px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 15px;
+  padding: 5px;
+}
+
+.username-title {
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: bold;
+  text-align: start;
+}
+
+.password-title {
+  font-family: 'Roboto';
+  font-size: 15px;
+  font-weight: bold;
+  text-align: start;
+}
+
+.username-style {
+  border: none;
+  outline: none;
+  height: 45px;
+  width: 480px;
+  background-color: #eeeeee;
+  border-radius: 8px;
+}
+
+.password-style {
+  border: none;
+  outline: none;
+  height: 45px;
+  width: 480px;
+  background-color: #eeeeee;
+  border-radius: 8px;
+}
+
+.submit-style {
+  height: 45px;
+  width: 480px;
+  text-align: center;
+  color: #ffffff;
+  background-color: #4094ef;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .login-card-container {
+    width: 90%;
+    max-width: 1250px;
+    gap: 35px;
+    padding: 30px;
+  }
+
+  .login-image {
+    width: 42%;
+    max-width: 450px;
+    height: auto;
+  }
+
+  .login-credentials-container {
+    width: 48%;
+    max-width: 500px;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .username-style,
+  .password-style,
+  .submit-style {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .login-card-container {
+    width: 90%;
+    max-width: 1000px;
+    min-height: auto;
+    gap: 25px;
+    padding: 30px;
+  }
+
+  .login-image {
+    width: 42%;
+    max-width: 380px;
+    height: auto;
+  }
+
+  .login-credentials-container {
+    width: 52%;
+    max-width: 450px;
+  }
+
+  .login-logo {
+    width: 140px;
+    height: 65px;
+  }
+
+  .insta-share-heading {
+    font-size: 23px;
+  }
+
+  .form-container {
+    width: 100%;
+  }
+
+  .username-style,
+  .password-style,
+  .submit-style {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px) {
+  .login-container {
+    min-height: 100vh;
+    width: 100%;
+    padding: 25px;
+  }
+
+  .login-card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 850px;
+    min-height: auto;
+    gap: 25px;
+    padding: 30px;
+  }
+
+  .login-welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42%;
+    flex-shrink: 0;
+  }
+
+  .login-image {
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .login-credentials-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 55%;
+    max-width: 430px;
+    margin: 0;
+    gap: 10px;
+  }
+
+  .login-logo {
+    width: 125px;
+    height: auto;
+  }
+
+  .insta-share-heading {
+    font-size: 22px;
+    margin: 10px 0;
+  }
+
+  .form-container {
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    width: 100%;
+    max-width: 430px;
+    gap: 13px;
+    padding: 5px 0;
+  }
+
+  .username-style,
+  .password-style,
+  .submit-style {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 44px;
+  }
+
+  .username-title,
+  .password-title {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 700px) {
+  .login-container {
+    padding: 20px;
+  }
+
+  .login-card-container {
+    flex-direction: column;
+    width: 100%;
+    min-height: auto;
+    padding: 30px 25px;
+    gap: 25px;
+  }
+
+  .login-welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .login-image {
+    width: 65%;
+    max-width: 320px;
+    height: auto;
+  }
+
+  .login-credentials-container {
+    width: 100%;
+    max-width: 450px;
+    margin: 0;
+  }
+
+  .login-logo {
+    width: 135px;
+    height: auto;
+  }
+
+  .insta-share-heading {
+    font-size: 23px;
+  }
+
+  .form-container {
+    width: 100%;
+    gap: 14px;
+  }
+
+  .username-style,
+  .password-style,
+  .submit-style {
+    width: 100%;
+    height: 44px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 500px) {
+  .login-container {
+    padding: 15px;
+  }
+
+  .login-card-container {
+    flex-direction: column;
+    width: 100%;
+    min-height: auto;
+    padding: 25px 18px;
+    gap: 20px;
+    border-radius: 12px;
+  }
+
+  .login-welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .login-image {
+    width: 80%;
+    max-width: 280px;
+    height: auto;
+  }
+
+  .login-credentials-container {
+    width: 100%;
+    margin: 0;
+    gap: 8px;
+  }
+
+  .login-logo {
+    width: 125px;
+    height: auto;
+  }
+
+  .insta-share-heading {
+    font-size: 21px;
+  }
+
+  .form-container {
+    width: 100%;
+    gap: 12px;
+  }
+
+  .username-style,
+  .password-style,
+  .submit-style {
+    width: 100%;
+    height: 42px;
+  }
+
+  .username-title,
+  .password-title {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .login-container {
+    padding: 10px;
+  }
+
+  .login-card-container {
+    flex-direction: column;
+    width: 100%;
+    min-height: auto;
+    padding: 22px 15px;
+    gap: 18px;
+    border-radius: 10px;
+  }
+
+  .login-welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .login-image {
+    width: 85%;
+    max-width: 240px;
+    height: auto;
+  }
+
+  .login-credentials-container {
+    width: 100%;
+    margin: 0;
+    gap: 6px;
+  }
+
+  .login-logo {
+    width: 110px;
+    height: auto;
+  }
+
+  .insta-share-heading {
+    font-size: 19px;
+  }
+
+  .form-container {
+    width: 100%;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .username-title,
+  .password-title {
+    font-size: 13px;
+  }
+
+  .username-style,
+  .password-style,
+  .submit-style {
+    width: 100%;
+    height: 40px;
+    font-size: 13px;
+  }
+}
