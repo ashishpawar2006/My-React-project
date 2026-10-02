@@ -54,37 +54,32 @@ const MyProfile = () => {
     makeApiCall()
   }, [apiUrl, jwtToken])
 
-  const {
-    followersCount,
-    followingCount,
-    postsCount,
-    profilePic,
-    stories,
-  } = profileInfo
+  const {followersCount, followingCount, postsCount, profilePic, stories} =
+    profileInfo
 
   const userName = Cookies.get('user_name')
 
   const myprofileStoriesFunction = (imageUrl, id) => (
     <div key={id}>
-      <img src={imageUrl} alt="profile-stories" className="profile-stories" />
+      <img src={imageUrl} alt='profile-stories' className='profile-stories' />
     </div>
   )
 
   return (
-    <div className="myprofile-container">
+    <div className='myprofile-container'>
       <Header />
 
       {isLoading ? (
         <LoaderComponent />
       ) : (
-        <main className="myprofile-content">
-          <section className="myprofile-info-section">
-            <img src={profilePic} alt={userName} className="profileImage" />
+        <main className='myprofile-content'>
+          <section className='myprofile-info-section'>
+            <img src={profilePic} alt={userName} className='profileImage' />
 
-            <div className="myprofile-info-container">
-              <h1 className="myprofile-username">{userName}</h1>
+            <div className='myprofile-info-container'>
+              <h1 className='myprofile-username'>{userName}</h1>
 
-              <div className="profile-details">
+              <div className='profile-details'>
                 <p>{postsCount} posts</p>
                 <p>{followersCount} followers</p>
                 <p>{followingCount} following</p>
@@ -92,25 +87,25 @@ const MyProfile = () => {
             </div>
           </section>
 
-          <section className="profile-stories-container">
+          <section className='profile-stories-container'>
             {stories.map(eachObj =>
               myprofileStoriesFunction(eachObj.imageUrl, eachObj.id),
             )}
           </section>
 
-          <section className="posts-heading-container">
+          <section className='posts-heading-container'>
             <h2>
               <BsGrid3X3 /> Posts
             </h2>
           </section>
 
-          <section className="profile-posts-container">
+          <section className='profile-posts-container'>
             {profileInfo.posts.map(eachPost => (
               <img
                 key={eachPost.id}
                 src={eachPost.imageUrl}
-                alt="post"
-                className="profile-post-image"
+                alt='post'
+                className='profile-post-image'
               />
             ))}
           </section>
